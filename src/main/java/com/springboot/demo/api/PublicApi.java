@@ -7,17 +7,11 @@ import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @RestController
-public class HomeApi {
+public class PublicApi {
 	
-	@GetMapping(value = {"/", "/home"})
+	@GetMapping("/public")
 	public String home() {
-		log.info("+ calling /home");
-		return "home";
-	}
-	
-	@GetMapping("/admin")
-	public String admin() {
-		log.info("+ calling /admin");
-		return "admin";
+		log.info("+ calling /public");
+		return "public";
 	}
 }
