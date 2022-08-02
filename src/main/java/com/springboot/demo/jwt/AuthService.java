@@ -25,7 +25,7 @@ public class AuthService {
 
     private final Logger logger = LoggerFactory.getLogger(AuthService.class);
     
-    @Autowired
+//    @Autowired
     private AuthenticationManager authenticationManager;
     
     @Autowired
